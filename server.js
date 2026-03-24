@@ -5,6 +5,10 @@ import jwt from "jsonwebtoken"
 import pool from "./config/db.js"
 import projectRoutes from "./routes/projects.js"
 
+pool.connect()
+  .then(() => console.log("✅ Connected to PostgreSQL"))
+  .catch(err => console.error("❌ DB Connection Error:", err.message))
+
 dotenv.config()
 
 const app = express()
@@ -56,6 +60,6 @@ app.get("/", (req,res)=>{
   res.send("Web app Backend Running")
 })
 
-app.listen(5000, ()=>{
+app.listen(5000, "0.0.0.0", () => {
   console.log("Server is running on port 5000")
 })
