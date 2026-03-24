@@ -3,7 +3,6 @@
 A RESTful API built with Node.js, Express, and PostgreSQL to manage portfolio projects, handle file uploads, and authenticate admin users using JWT.
 
 ---
-
 ## Tech Stack
 - Node.js – Server-side runtime  
 - Express.js – Web framework for RESTful APIs  
@@ -12,7 +11,6 @@ A RESTful API built with Node.js, Express, and PostgreSQL to manage portfolio pr
 - Multer – File uploads (images, media)  
 
 ---
-
 ## Project Structure
 web-app-portfolio-backend/
 ├── config/ # Database configuration
@@ -27,7 +25,6 @@ web-app-portfolio-backend/
 
 
 ---
-
 ## Features
 - Admin authentication using JWT
 - CRUD API for projects
@@ -38,7 +35,6 @@ web-app-portfolio-backend/
 - Error handling middleware
 
 ---
-
 ## Authentication
 - POST /api/login  
   Returns a JWT token if `ADMIN_PASSWORD` matches `.env`.  
@@ -48,7 +44,6 @@ Authorization: Bearer <token>
 
 
 ---
-
 ## API Endpoints
 
 ### Projects
