@@ -11,6 +11,7 @@ A RESTful API built with Node.js, Express, and PostgreSQL to manage portfolio pr
 - Multer – File uploads (images, media)  
 
 ---
+```
 ## Project Structure
 web-app-portfolio-backend/
 ├── config/ # Database configuration
@@ -22,7 +23,7 @@ web-app-portfolio-backend/
 ├── server.js # App entry point
 ├── package.json
 └── .env # Environment variables (ignored in git)
-
+```
 
 ---
 ## Features
